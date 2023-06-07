@@ -86,9 +86,7 @@ while True:
     num_of_frames+=1
     cv.imshow("Sign Detection",copy_frame)
 
-    k = cv.waitKey(1) & 0xFF
-
-    if k==27:
+    if cv.waitKey(1) & 0xFF == ord("q"):
         break
 
 
